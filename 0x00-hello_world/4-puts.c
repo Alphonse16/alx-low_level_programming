@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 #include <studio.h>
 / **
 *main - Prints string
