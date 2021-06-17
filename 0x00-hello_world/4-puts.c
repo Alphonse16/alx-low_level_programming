@@ -1,12 +1,12 @@
-#!/bin/bash
+# !/bin/bash
 #include <studio.h>
-/**
- * main - entry point
- *
- * Return: 0 after printing the function
- */
+/ **
+*main - Prints string
+*Description: Prints "\"Programming is like a multilingual puzzle"
+*Return: 0
+*/
 int main(void)
 {
-puts("\"Programming is like a multiligual puzzle");
-return (0);
+	puts(" \ "Programming is like a multiligual puzzle");
+	return (0);
 }
