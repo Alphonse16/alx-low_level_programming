@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
 *main - main block
 *description : Gets a random number and check its last digit, compare it with 5
@@ -7,14 +6,14 @@
 */
 int main(void)
 {
-	char c = 'a';
+	char c;
 
-	while (c = 'z')
+	for (c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
-		c++;
 	}
 
 	putchar('\n');
+
 	return (0);
 }
