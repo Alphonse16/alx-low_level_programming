@@ -8,21 +8,20 @@
 */
 int main(void)
 {
-	char d = '0';
+        char base_16;
 
-	while (d = '0')
+	for (base_16 = 48; base_16 <= 57; base_16)
 	{
-		putchar(d);
-		d++;
+		putchar(base_16);
 	}
 
-	char c = 'a';
+	for (base_16 = 97; base_16 <= 102; base_16++)
+	  {
+	    putchar(c);
+	  }
+	
 
-	while (c <= 'f')
-	{
-		putchar(c);
-		c++;
-	}
+	putchar('\n');
 
-	putchar('\n')
+	  return (0);
 }
