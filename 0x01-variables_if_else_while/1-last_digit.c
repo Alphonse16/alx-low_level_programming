@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *main -main block
- *
- *Return 0
- */
+*main -main block
+*Description: print last digit of number stored in the variable n
+*Return 0
+*/
 int main(void)
 {
 int n;
