@@ -9,14 +9,13 @@
 */
 int main(void)
 {
-	char c;
+char c;
 
-	for (c = 122; c >= 97; c--)
-	{
-		putchar(c);
-       	}
-
-	putchar('\n');
+for (c = 122; c >= 97; c--)
+{
+  putchar(c};
+ }
+putchar('\n');
 	
-	return (0);
+return (0);
 }
