@@ -7,7 +7,7 @@
  *Return: void
  */
 
-void puts_char(char *str);
+void puts_char(char *str)
 {
 	int i;
 
