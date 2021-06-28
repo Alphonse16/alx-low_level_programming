@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  *print_array - prints n elements of a array of intergers, followed by a new line.
