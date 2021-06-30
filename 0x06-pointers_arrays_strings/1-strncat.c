@@ -22,7 +22,7 @@ int _strlen(char *str)
 /**
  * _strncat - concatinates two strings
  * @dest: destination pointer
- * @src: pointer to a string 
+ * @src: pointer to a string
  * @n: amount to be concatenated
  * Return: concatinated string
  */
