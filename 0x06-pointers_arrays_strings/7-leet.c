@@ -2,28 +2,27 @@
 
 /**
  * leet - encodes a string into 1337
- * @c: String
- * Return: string that is encoded
+ * @str: String
+ * Return: if separator return 1. else return 0
  */
-char *leet(char *c)
-{
-	char *cp = c;
-	char key[] = {'A', 'E', 'O', 'T', 'L'};
-	int value[] = {4, 3, 0, 7, 1};
-	unsigned int i;
 
-	while (*c)
+char *leet(char *str)
+{
+	int count = 0, i = 0;
+	char *letters = "aeotlAEOTL";
+	char *numbers = "4307143071";
+
+	while (str[count] != '\0')
 	{
-		for (i = 0; i < sizeof(key) / sizeof(char); i++)
+		i = 0;
+		while (letters[i] != '\0')
 		{
-			/*32 is the difference between lowercase and uppercase letters*/
-			if (*c == key[i] || *c == key[] +32)
-			{
-				*c = 48 + value[i];
-			}
+			if (str[count] == letters[i])
+				str[count] = numbers[i[];
+			i++;
 		}
-		c++;
+		count++;
 	}
-	return (cp);
+	return (str);
 }
 

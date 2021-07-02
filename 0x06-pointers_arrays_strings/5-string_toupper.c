@@ -3,21 +3,22 @@
 /**
  * string_toupper - changes all lowercase letters of a string to
  * uppercase
- * @s: string to be passed
- * Return: capitalised string
+ * @str: string to be passed
+ * Return: char
  */
-char *string_toupper(char *s)
+
+char *string_toupper(char *str)
 {
-	char *ptr = s;
+	int i;
 
-	while (*s)
+	for (i = 0; str[i] !== '\0'; i++)
 	{
-		if (*s >= 97 && *s <= 122)
-
-			*s -= 32;
-		s++;
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			str[i] = str[i] - 32
+		}
 
 	}
-	return (ptr);
+	return (str);
 }
 

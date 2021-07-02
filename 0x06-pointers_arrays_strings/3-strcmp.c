@@ -4,22 +4,19 @@
  * _strcmp - compares two strings
  * @s1: string 1
  * @s2: string 2
- * Return: 1 if true, 0 if false
+ * Return: dest
  */
 int _strcmp(char *s1, char *s2)
 {
-	int equal = 0;
+	char *str_one = s1;
+	char *str_two = s2;
 
-	while (*s1)
+	while (*str_one != '\0' && *str_two != '\0' && *str_one == *str_two)
 	{
-		if (*s1 != *s2)
-		{
-			equal = ((int)*s1 - 48) - ((int)*s2 - 48);
-			break;
-		}
-		s1++;
-		s2++;
+		str_one++;
+		str_two++;
 	}
-	return (equal);
+
+	return (*str_one - *str_two);
 }
 
