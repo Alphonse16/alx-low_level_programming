@@ -1,21 +1,10 @@
 #include "holberton.h"
 
 /**
- * is_prime_number - check if n is a prime number
- * @n: int
- * Return: 0 or 1
- */
-
-int is_prime_number(int n)
-{
-return (check_prime(n, 2));
-}
-
-/**
- * check_prime - check all number less than n if they can divide it
+ * check_prime - recursion loop
  * @n: int
  * @resp: int
- * Return int
+ * Return 1 or 0
  */
 
 int check_prime(int n, int resp)
@@ -34,3 +23,14 @@ return (check_prime(n, resp + 1));
 }
 }
 
+
+/**
+ * is_prime_number - check if n is a prime number
+ * @n: int
+ * Return: 0 or 1
+ */
+
+int is_prime_number(int n)
+{
+return (check_prime(n, 2));
+}
