@@ -32,6 +32,5 @@ else
 {
 return (check_prime(n, resp + 1));
 }
-
-
+}
 
