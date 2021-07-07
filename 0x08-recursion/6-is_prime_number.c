@@ -1,36 +1,45 @@
 #include "holberton.h"
 
 /**
- * check_prime - recursion loop
- * @n: int
- * @resp: int
- * Return 1 or 0
+ * evaluate_num - recursion loop
+ * @num: num
+ * @iterator: number to iterate
+ * Return: return to 1 or 0
  */
-
-int check_prime(int n, int resp)
-{
-if (resp >= n && n > 1)
+int evaluate_num(int num, int iterator)
 {
 return (1);
 }
-else if (n % resp == 0 || n <= 1)
+else if (num % iterator == 0)
+{
+
+if (num % iterator != 0)
+{
+return (evaluate_num(num, iterator + 1));
+}
+return (0);
+}
+
+/**
+ * is_prime_number - evaluate prime or not
+ * @num: number
+ * Return: return 1 prime - return 0 otherwise
+ */
+
+int is_prime_number(int num)
+{
+int iterator;
+
+if (num < 2)
 {
 return (0);
 }
-else
+
+if (num == 2)
 {
-return (check_prime(n, resp + 1));
-}
+return (1);
 }
 
-
-/**
- * is_prime_number - check if n is a prime number
- * @n: int
- * Return: 0 or 1
- */
-
-int is_prime_number(int n)
-{
-return (check_prime(n, 2));
+return (evaluate_num(num, iterator));
 }
+

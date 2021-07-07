@@ -13,5 +13,7 @@ int check(char *s, int start, int end, int pair);
 int is_palindrome(char *s);
 int checker(char *s1, char *s2, int a, int b, int wildUsed);
 int wildcmp(char *s1, char s2);
+int evaluate_num(int num, int iterator);
+int evaluate(char *s, int i, int size, int add);
 
 
