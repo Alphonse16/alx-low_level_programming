@@ -17,7 +17,7 @@ return (square(n, 1));
  * Return: int
  */
 
-int sqaure(int n, int val)
+int square(int n, int val)
 {
 if (val * val == n)
 {
