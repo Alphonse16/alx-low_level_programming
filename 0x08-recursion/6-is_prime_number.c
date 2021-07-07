@@ -13,7 +13,7 @@ return (check_prime(n, 2));
 
 /**
  * check_prime - check all number less than n, if they can divide it
- *Description: check_prime 
+ * Description: check_prime
  * @n: int
  * @resp: int
  * Return: int
