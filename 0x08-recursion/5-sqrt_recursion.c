@@ -27,7 +27,7 @@ else if (val * val < n)
 {
 return (square(n, val + 1));
 }
-else 
+else
 {
 return (-1);
 }
