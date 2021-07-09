@@ -48,9 +48,3 @@ char *_strstr(char *haystack, char *needle)
 		haystack++;
 	}
 	if (found)
-	{
-		return (start);
-	}
-	return (NULL);
-}
-
