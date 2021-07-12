@@ -1,6 +1,29 @@
 #include "holberton.h"
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 #include <stdlib.h>
+/**
+ * check_num - check string if there is a digit
+ * @str: array str
+ * Return: 0
+ */
+
+int check_num(char *str)
+{
+	unsigned int count;
+
+	count = 0;
+	while (count < strlen(str))
+	{
+		if (!isdigit(str[count]))
+		{
+			return (0);
+		}
+		count++;
+	}
+	return (1);
+}
 
 /**
  * main - adds positive numbers and prints
@@ -11,17 +34,26 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, res = 0;
+	int count, str_to_int;
+	int sum = 0;
 
-	if (argc > 1)
-		for (i = 1; i < argc; i++)
+	count = 1;
+	while (count < argv)
+	{
+		if (check_num(argv[count]))
 		{
-			for (argv[i][j]; j++;)
-				if (argv[i][j] < '0' || argv[i][j] > '9')
-					return (printf("Error\n"), 1);
-			res += atoi(argv[i]);
+			str_to_int = atoi(argv[count]);
+			sum += str_to_int;
 		}
-	printf("%i\n", res);
+
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		count++;
+	}
+	printf("%d\n", sum);
 	return (0);
 }
 
