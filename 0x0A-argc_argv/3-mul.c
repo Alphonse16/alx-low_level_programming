@@ -1,39 +1,27 @@
+#include "holberton.h"
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - print the result of the multiplication, followed by a new line
+ * main - multiplies two arguments and prints results
  * @argc: int
  * @argv: list
  * Return: 0
  */
 
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
-	int count;
-	int first_num;
-	int second_num;
-	int results;
+	int first_number;
+	int second_number;
 
-	(void)argc;
-
-	count = 1;
-	if (argc[count] != '\0')
+	if (argc == 3)
 	{
-		if (argv[count] == NULL || argv[count + 1] == NULL)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
-			first_num = atoi(argv[count]);
-			second_num = atoi(argv[count + 1]);
-			result = first_num * second_num;
-
-			printf("%d\n", result);
-		}
+		first_number = atoi(argv[1]);
+		second_number =atoi(argv[2]);
+		printf("%i\n", first_number * second_number);
+		return (0);
 	}
+	printf("Error\n");
 	return (0);
 }
 
