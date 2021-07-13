@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	if (argc == 3)
 	{
 		first_number = atoi(argv[1]);
-		second_number =atoi(argv[2]);
+		second_number = atoi(argv[2]);
 		printf("%i\n", first_number * second_number);
 		return (0);
 	}
