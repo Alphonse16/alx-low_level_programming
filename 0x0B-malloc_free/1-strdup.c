@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 /**
- * _strdup - return a pointer to a newly alocated space in memory
+ * *_strdup - return a pointer to a newly alocated space in memory
  * which contains a copy of the string given as a parameter.
  * @str: string
  * Return: 0
  */
 
-char *_stdup(char *str)
+char *_strdup(char *str)
 {
 	int i = 0, size = 0;
 	char *m;
@@ -23,11 +23,11 @@ char *_stdup(char *str)
 
 	if (m == 0)
 		return (NULL);
-	else
+
+	for (; i < size; i++)
 	{
-		for (; i < size; i++)
-			m[i] = str[i];
+		m[i] = str[i];
 	}
 	return (m);
 }
-`
+
