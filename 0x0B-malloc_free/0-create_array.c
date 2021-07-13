@@ -1,4 +1,4 @@
-#include <stdlio.h>
+#include <stdlib.h>
 
 /**
  * create_array - creates an array o chars
