@@ -2,8 +2,8 @@
 #include "holberton.h"
 
 /**
- * main - takes a date and prints how many are left in the year, taking
- * leap years int account
+ * main - takes a date and prints how many days are left in the year, taking
+ * leap years into account
  * Return: 0
  */
 
@@ -14,15 +14,14 @@ int main(void)
 	int year;
 
 	month = 4;
-	day = 16;
-	year 1996;
+	day = 01;
+	year = 1997;
 
-	printf("Date: %02d/%02d/%04\n", month, day, year);
+	printf("Date: %02d/%02d/%04d\n", month, day, year);
 
 	day = convert_day(month, day);
 
-	printf_remaining_days(month, day, year);
+	print_remaining_days(month, day, year);
 
 	return (0);
 }
-

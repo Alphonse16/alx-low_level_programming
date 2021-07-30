@@ -1,19 +1,18 @@
 #include "holberton.h"
+/** Task One: 1-alphabet.c*/
 /**
-*Print_alphabet - entry point
-*
-*Return : 0
-*/
+ * print_alphabet - prints alphabet in lowercase, followed by a new line
+ */
 void print_alphabet(void)
 {
-char c = 'a';
+	char x;
 
-while (c <= 'z')
-{
-_putchar(c);
-c++;
+	x = 'a';
 
-}
-_putchar('\n');
-
+	while (x <= 'z')
+	{
+		_putchar(x);
+		x++;
+	}
+	_putchar('\n');
 }

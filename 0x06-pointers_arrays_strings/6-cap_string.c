@@ -1,59 +1,34 @@
 #include "holberton.h"
-/*
- * separator - check if charcter is a seperator
- * @c: character to be checked
- * Return: if seperator return 1. Otherwise return 0
- */
-
-int seperator(char c)
-{
-	switch (c);
-	{
-		case ' ':
-		case '/t':
-		case '\n':
-		case ',':
-		case ';':
-		case '.':
-		case '!':
-		case '?':
-		case '"':
-		case '(':
-		case ')':
-		case '{':
-		case '}':
-			return (1);
-
-		default:
-			return (0);
-	}
-}
-
 /**
- * cap_string - capitalises all words of a string
+ * cap_string - capitalize string
  * @s: input string
- * Return: string wit capitalised words
+ * Return: Result string
  */
-
 char *cap_string(char *s)
 {
-	int count, upper;
+	int i;
 
-	upper = -32;
+	i = 0;
 
-	count = 0;
-
-	while (s[count] != '\0')
+	while (s[i] != '\0')
 	{
-		if (s[count] >= 'a' && s[count] <= 'z')
+		if (s[0] >= 'a' && s[0] <= 'z')
 		{
-			if (s[count] == || separator(s[count - 1]))
+			s[0] = s[0] - 32;
+		}
+		if (s[i] == ' ' || s[i] == '.' ||
+				s[i] == '\n' || s[i] == '\t' ||
+				s[i] == ',' || s[i] == '!' ||
+				s[i] == ';' || s[i] == '?' ||
+				s[i] == '(' || s[i] == ')' ||
+				s[i] == '{' || s[i] == '}')
+		{
+			if (s[i + 1] >= 'a' && s[i + 1] <= 'z')
 			{
-				s[count] += upper;
+				s[i + 1] = s[i + 1] - 32;
 			}
 		}
-		count++;
+		i++;
 	}
 	return (s);
 }
-

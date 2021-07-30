@@ -1,33 +1,29 @@
 #include "holberton.h"
 
 /**
- * _strlen - concatenates two strings
- * Description - concatinating two strings and updating two pointers
- * @dest: A pointer to a char that will be updated
- * @src: A pointer to a char that will be updated
- * @n: value
- * Return: dest
+ * *_strncat - concatenates n bytes from a string to another
+ * @dest: string appended to
+ * @src: string to append
+ * @n: limit of bytes to concatenate
+ * Return: a pointer to the resusltant string dest
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
-int i, j;
+	int x, y;
 
-i = 0;
-while (dest[i] != '\0')
-{
-i++;
+	x = 0;
+	y = 0;
+
+	while (dest[x] != '\0')
+		x++;
+
+	while (src[y] != '\0' && y < n)
+	{
+		dest[x] = src[y];
+		x++;
+		y++;
+	}
+
+	dest[x] = '\0';
+	return (dest);
 }
-
-j = 0;
-while (j < n && src[j] != '\0')
-{
-dest[i] = src[j];
-j++;
-i++;
-}
-
-dest[i] = '\0';
-return (dest);
-}
-

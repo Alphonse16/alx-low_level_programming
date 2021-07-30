@@ -1,24 +1,24 @@
 #include "holberton.h"
-
+/** Task Two: 2-print_alphabet_x10.c*/
 /**
-*Print_alphabet_x10 - Prints alphabet 10 times
-*
-*Return: void
-*/
+ * print_alphabet_x10 - prints 10 times alphabet in lowercase
+ */
 void print_alphabet_x10(void)
 {
-char c;
-int i = 0;
+	int y;
+	char x;
 
-while (i < 10)
-{
-c = 'a';
-while (c <= 'z')
-{
-_putchar(c);
-c++;
-}
-_putchar('\n');
-i++
-}
+	y = 0;
+
+	while (y < 10)
+	{
+		x = 'a';
+		while (x <= 'z')
+		{
+			_putchar(x);
+			x++;
+		}
+		_putchar('\n');
+		y++;
+	}
 }

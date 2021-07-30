@@ -1,13 +1,14 @@
 #include "holberton.h"
 
 /**
- * convert_day - converts day of month to day of year, without accouting
+ * convert_day - converts day of month to day of year, without accounting
  * for leap year
  * @month: month in number format
- * @day: day of the month
+ * @day: day of month
  * Return: day of year
  */
-int convert_day(void)
+
+int convert_day(int month, int day)
 {
 	switch (month)
 	{
@@ -22,6 +23,7 @@ int convert_day(void)
 			break;
 		case 5:
 			day = 120 + day;
+			break;
 		case 6:
 			day = 151 + day;
 			break;
@@ -48,4 +50,3 @@ int convert_day(void)
 	}
 	return (day);
 }
-

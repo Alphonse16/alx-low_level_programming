@@ -3,9 +3,10 @@
 
 /**
  * main - takes a date and prints how many days are left in the year, taking
- * leap yeas into account
- *Return: 0
+ * leap years into account
+ * Return: 0
  */
+
 int main(void)
 {
 	int month;
@@ -13,13 +14,14 @@ int main(void)
 	int year;
 
 	month = 2;
-	day = 24;
-	year = 2004;
+	day = 29;
+	year = 2000;
 
-	printf("Date: %02d/%02d/%04\n", month, day, year);
+	printf("Date: %02d/%02d/%04d\n", month, day, year);
 
 	day = convert_day(month, day);
 
+	print_remaining_days(month, day, year);
+
 	return (0);
 }
-
