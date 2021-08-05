@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include "main.h"
 
 /**
  * get_endianness - checks the endianness
